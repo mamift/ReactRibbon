@@ -1,0 +1,18 @@
+@import '../scss/global.scss';
+
+.dashboard {
+  div {
+    // border: 1px solid black;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+  }
+
+  .dashboard-detail {
+    // margin-top: 30px;
+  }
+}

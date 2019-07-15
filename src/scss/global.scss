@@ -1,0 +1,88 @@
+@import './responsiveness_mixins.scss';
+@import './Colors.scss';
+
+$googleFontStack: 'Lato', 'Open Sans', 'Roboto', 'Source Sans Pro', sans-serif;
+$nonCustomFontStack: Verdana, Arial, sans-serif;
+
+a {
+    cursor: pointer;
+}
+
+$defaultPadding: 15px;
+
+$headerBoxShadow: rgba(10,10,10,0.3) 1px 1px 2px;
+
+$toolbarBorderColor: rgb(184, 186, 189);
+
+$quicklaunchBorderColor: rgb(219, 221, 222);
+$quicklaunchBackgroundColor: rgb(252, 252, 252);
+
+$quicklaunchWidth: 155px;
+$quicklaunchMinHeight: 300px;
+
+$headerHeight: 50px;
+
+$ribbonHeaderBackgroundColor: #21374c;
+
+$toolbarBackgroundColor: rgb(249, 249, 249);
+
+$maxWidthSiteLogoAndFileMenu: 70px;
+$minWidthSiteLogoAndFileMenu: 60px;
+
+$minWidthTrailBreadcrumb: 480px - $minWidthSiteLogoAndFileMenu;
+$minWidthTrailBreadcrumbPhone: $minWidthTrailBreadcrumb - 170px;
+
+$navHeaderlinkColor: #0072bc;
+
+$quickLaunchLinkColor: #3b4f65;
+$quickLaunchLinkColorLight: #8dbdf1;
+$quickLaunchLinkColorDark: #2c3b4b;
+
+$heading1Color: #00273f;
+$heading2Color: #003f66;
+$heading3Color: #003759;
+$heading4Color: #0066a5;
+$heading5Color: #008ee5;
+
+$defaultHeadingLinkColor: #003759;
+
+$activeLinkGradient: linear-gradient(to top, transparentize(#91cdf2, 0.5), transparentize(#c6e5f8, 0.5));
+$activeLinkBackgroundColor: rgba(204, 235, 255, 0.9);
+
+$defaultHeadingColor: #676767;
+
+$defultDescriptionColor: #5d6878;
+
+$defaultFontSize: 8pt;
+
+$fileMenuGradientOrange: linear-gradient(to bottom, #f1911b, #ee7f15, #fec02b);
+$fileMenuGradientOrangeHover: linear-gradient(to bottom, lighten(#f1911b, 10%), lighten(#ee7f15, 10%), lighten(#fec02b, 10%));
+
+$fileMenuGradientPurple: linear-gradient(to bottom, $lightPurple, darken($lightPurple, 9%), lighten($lightPurple, 13%));
+$fileMenuGradientPurpleHover: linear-gradient(to bottom, lighten($lightPurple, 5%), darken($lightPurple, 5%), lighten($lightPurple, 9%));
+
+$fileMenuGradientWhite: linear-gradient(to bottom, $sublimeGray, darken($sublimeGray, 9%), lighten($sublimeGray, 13%));
+$fileMenuGradientWhiteHover: linear-gradient(to bottom, lighten($sublimeGray, 5%), darken($sublimeGray, 5%), lighten($sublimeGray, 9%));
+
+$cardBoxShadowBig: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 4px 8px rgba(16, 22, 26, 0.2), 0 18px 46px 6px rgba(16, 22, 26, 0.2);
+$cardBoxShadowMedium: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 2px 4px rgba(16, 22, 26, 0.2), 0 8px 24px rgba(16, 22, 26, 0.2);
+$cardBoxShadowSmall: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 1px 1px rgba(16, 22, 26, 0.2), 0 2px 6px rgba(16, 22, 26, 0.2);
+
+.glyphicon {
+    @each $i in (110, 120, 130, 140, 150) {
+        &.s#{$i} { font-size: $i + unquote("%"); }
+    }
+}
+
+%router_link_active {
+    border: 1px solid #91cdf2;
+    // border-left-color: transparent;
+    // border-right-color: transparent;
+    background-color: $activeLinkBackgroundColor;
+    background: $activeLinkGradient;
+}
+
+%full_width_anchor {
+    display: block;
+    width: 100%;
+}

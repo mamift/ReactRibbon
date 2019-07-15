@@ -1,0 +1,173 @@
+@import '../scss/global.scss';
+
+$buttonBorderColor1: lighten(orange, 10%);
+$buttonHoverBackgroundColor1: transparentize($buttonBorderColor1, 0.6);
+// $buttonHoverBorderColor1: $buttonBorderColor1;
+
+$buttonBorderColor2: darken(gray, 10%);
+$buttonHoverBackgroundColor2: transparentize($buttonBorderColor2, 0.6);
+
+$buttonBorderColor3: darken(blue, 10%);
+$buttonHoverBackgroundColor3: transparentize($buttonBorderColor3, 0.7);
+// $buttonHoverBorderColor2: $buttonBorderColor1;
+
+%buttongroup_borders {
+  border-left: 1px solid lighten($toolbarBorderColor, 15%);
+  border-right: 1px solid lighten($toolbarBorderColor, 15%);
+}
+
+.ribbon .toolbar {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  border-bottom: 1px solid $toolbarBorderColor;
+  background-color: $toolbarBackgroundColor;
+  z-index: 10;
+
+  @include mobile {
+    // border-bottom-color: transparent;
+  }
+}
+
+@mixin rb_small {
+  margin-top: 1px;
+  height: 18px;
+  // min-width: 64px;
+  text-align: left;
+  display: list-item;
+  display: flex;
+  align-items: center;
+  // flex-basis: 100px;
+
+  i {
+    margin-right: 3px;
+    display: inline-block;
+    font-size: 0.7em;
+    text-align: left;
+    position: unset;
+    top: unset;
+    line-height: unset;
+  }
+}
+
+@mixin rbtn() {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-size: 8pt;
+  // word-spacing: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  cursor: default;
+  display: inline-block;
+  // min-width: 48px;
+  border: 1px solid transparent;
+  padding: 3px;
+
+  & > span {
+    line-height: 8pt;
+    user-select: none;
+  }
+
+  &:hover {
+    border-color: $buttonBorderColor1;
+    background-color: lighten($buttonBorderColor1, 25%);
+  }
+
+  &.focus {
+    border-color: darken($buttonBorderColor1, 15%);
+    background-color: darken($buttonBorderColor1, 10%);
+    color: white;
+  }
+
+  %i_shared_styling {
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+    position: unset;
+    top: unset;
+    line-height: unset;
+  }
+
+  &.rb-large {
+    margin-top: 1px;
+    height: 38px;
+    // min-width: 64px;
+    text-align: left;
+    display: list-item;
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 3px;
+      display: inline-block;
+      font-size: 2em;
+      text-align: left;
+      position: unset;
+      top: unset;
+      line-height: unset;
+    }
+
+    @media (min-width: 1px) and (max-width: 768px) {
+      & > span {
+        display: none;
+        min-width: 0;
+      }
+
+      i {
+        margin-right: 0;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  &.rb-small {
+    @include rb_small;
+    // @extend .rb_small;
+  }
+}
+
+div.ribbon-buttongroup {
+  width: auto;
+  // padding-right: 3px;
+  // padding-left: 3px;
+  // flex-basis: 40%;
+
+  @extend %buttongroup_borders;
+
+  &:first-child {
+    border-left: none;
+  }
+
+  & + & {
+    border-left: none;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+
+  ul {
+    margin: 0;
+    height: auto;
+    max-height: 100%;
+    min-width: 48px;
+    padding: 2px;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    li.ribbon-button {
+      @include rbtn()
+    }
+  }
+
+  .title {
+    cursor: default;
+    text-align: center;
+    margin: 3px auto 0 auto;
+    color: lighten(black, 60%);
+  }
+}

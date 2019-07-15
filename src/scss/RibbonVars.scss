@@ -1,0 +1,74 @@
+@import './Colors.scss';
+
+$ribbonSubgroupDefaultColor1: rgb(0, 173, 238);
+$ribbonSubgroupBorderColor1: lighten($ribbonSubgroupDefaultColor1, 10%);
+
+$ribbonSubgroupGradientColor1: $ribbonSubgroupDefaultColor1;
+$ribbonSubgroupGradientColor2: lighten($ribbonSubgroupGradientColor1, 30%);
+$ribbonSubgroupBorderColorTransparent20: transparentize($ribbonSubgroupBorderColor1, 0.2);
+
+$ribbonSubgroupGradient: linear-gradient(to top, transparent 10%, $ribbonSubgroupBorderColorTransparent20);
+$ribbonSubgroupButtonHoverGradient1: linear-gradient(to top, transparent 10%, $ribbonSubgroupBorderColorTransparent20);
+$ribbonSubgroupButtonHoverGradient1Active: linear-gradient(to top, transparent 10%, lighten($ribbonSubgroupBorderColor1, 25%));
+
+$ribbonButtonHoverGradient: linear-gradient(to top, transparentize(gray, 1) 10%, transparentize(darken(white, 30%), 0.2));
+$ribbonButtonHoverReverseGradient: linear-gradient(to bottom, transparentize(gray, 1) 10%, transparentize(gray, 0.2));
+
+@function ribbonSubgroupGradient($color) {
+    $lgColor: transparentize(lighten($color, 30%), 0.2);
+    @return linear-gradient(to top, transparent 10%, $lgColor);
+}
+
+@mixin sharedRibbonSubgroupAndTitleStyling($color) {
+    border-left: 1px solid $color;
+    border-right: 1px solid $color;
+    color: lighten($color, 30%);
+    margin: 0 2px;
+}
+
+@mixin ribbonSubgroupSharedStyling($color) {
+    $borderColor: lighten($color, 10%);
+    $borderColorTransparent: transparentize($borderColor, 0.2);
+    $buttonHoverGradient1: linear-gradient(to top, transparent 10%, $borderColorTransparent);
+    $hoverGradient1Active: linear-gradient(to top, transparent 10%, lighten($borderColor, 25%));
+
+    @include sharedRibbonSubgroupAndTitleStyling($color);
+
+    li.ribbon-tabbutton {
+        margin: 0;
+        &:hover { border-top-color: $color; }
+        &.active span.title {
+            border-color: $color;
+            background-image: $hoverGradient1Active;
+        }
+
+        span.title {
+            &:hover {
+                border-color: $borderColor;
+                background-image: $buttonHoverGradient1;
+            }
+        }
+    }
+
+    .ribbon-tabbutton + .ribbon-tabbutton {
+        margin-left: 2px;
+    }
+
+    li.ribbon-tabbutton:first-child span.title {
+        border-left: none;
+
+        &:hover {
+            border-top-color: $borderColor;
+            border-right-color: $borderColor;
+        }
+    }
+
+    li.ribbon-tabbutton:last-child span.title {
+        border-right: none;
+
+        &:hover {
+            border-top-color: $borderColor;
+            border-left-color: $borderColor;
+        }
+    }
+}

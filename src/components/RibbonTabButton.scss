@@ -1,0 +1,45 @@
+@import '../scss/global.scss';
+@import '../scss/RibbonVars.scss';
+
+li.ribbon-tabbutton {
+  min-width: 55px;
+  margin: 0 1px;
+
+  &.active {
+    span.title {
+      background-color: $toolbarBackgroundColor;
+      color: black;
+      // text-decoration: underline;
+
+      &:hover {
+        color: black;
+        // background-image: $ribbonButtonHoverReverseGradient;
+        background-image: none;
+        // border-bottom: 1px solid $toolbarBackgroundColor;
+      }
+    }
+  }
+
+  span.title {
+    cursor: pointer;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: block;
+    border: 1px solid transparent;
+    margin-top: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 5px 10px;
+
+    &:hover {
+      color: white;
+      border: 1px solid white;
+      background-image: $ribbonButtonHoverGradient;
+      border-bottom: none;
+    }
+
+    a {
+      color: white;
+    }
+  }
+}

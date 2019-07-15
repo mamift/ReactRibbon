@@ -1,0 +1,41 @@
+@import "../scss/global.scss";
+
+.workspace {
+  margin-top: 95px;
+  // clear: both;
+  // float: left;
+  // width: 100%;
+
+  .workspace-content {
+    font-size: 10pt;
+    // text-align: center;
+    position: relative;
+    // padding-left: $defaultPadding;
+    // padding-top: $defaultPadding;
+    padding: $defaultPadding;
+    min-height: 320px;
+
+    @include mobile {
+      margin-top: 95px;
+      margin-left: 0;
+      padding: 45px 10px 10px 10px;
+      min-height: unset;
+      clear: both;
+    }
+
+    & > *:first-child {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  h1, h2 {
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+  }
+
+  &.workspaceWithQuickLaunch .workspace-content {    
+    margin-left: $quicklaunchWidth + 10px;
+  }
+}

@@ -1,0 +1,47 @@
+
+@import '../scss/global.scss';
+
+%file_menu  {
+  flex-basis: 10%;
+  max-width: $maxWidthSiteLogoAndFileMenu;
+  display: flex;
+  align-items: flex-end;
+
+  button.file-menu {
+    width: 60px;
+    height: 24px;
+    margin-left: 5px;
+    outline-style: none;
+
+    border: 1px solid lighten($orange, 10%);
+    border-bottom-color: lighten($orange, 30%);
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-shadow: 1px 1px 2px black;
+    background-image: $fileMenuGradientOrange;
+
+    &:hover {
+      border: 1px solid lighten($orange, 30%);
+      background-image: $fileMenuGradientOrangeHover;
+    }
+
+    &.focus {
+      border-bottom-color: #fec02b;
+    }
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.ribbon .header div.file-menu {
+  @extend %file_menu;
+
+  @include mobile {
+    button.file-menu {
+      margin-left: 2px;
+    }
+  }
+}

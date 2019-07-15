@@ -1,0 +1,37 @@
+
+@import '../scss/global.scss';
+
+.authenticate form {
+  width: 80%;
+  // margin: 30px auto 20px;
+  padding: 25px 0;
+
+  @include mobile() {
+    width: 100%;
+    margin: unset;
+  }
+
+  .bad-authenticate-message p {
+    font-size: 125%;
+    color: red;
+    text-align: center;
+    margin: 0 auto 32px auto;
+  }
+
+  input {
+    margin: 3px 0;
+    padding: 3px;
+
+    &[type='checkbox'] + label {
+      font-weight: normal;
+    }
+
+    &[type='text'], &[type='password'] {
+      width: 60%;
+    }
+  }
+
+  .form-group {
+    // margin: 4px 0;
+  }
+}

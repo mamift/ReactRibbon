@@ -1,0 +1,48 @@
+
+$cardWidth: 220px;
+$cardHeight: $cardWidth - ($cardWidth * 0.25);
+
+.card {
+  max-width: $cardWidth;
+  // max-width: $cardWidth + 50px;
+  max-height: $cardHeight;
+  // max-height: $cardHeight + 20px;
+  margin: 5px;
+  padding: 20px;
+
+  border: 1px solid darken($quicklaunchBorderColor, 20%);
+  border-radius: 4px;
+  cursor: pointer;
+
+  h1 {
+    color: darken($navHeaderlinkColor, 10%);
+    font-size: 1.6em;
+    font-weight: normal;
+    height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    & + p {
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    margin: 0;
+    text-align: left;
+    font-size: 1.1em;
+    overflow: hidden;
+    max-height: 0.58 * $cardHeight;
+  }
+
+  &:hover {
+    box-shadow: $cardBoxShadowMedium;
+  }
+
+  &:focus {
+    box-shadow: $cardBoxShadowMedium;
+  }
+}

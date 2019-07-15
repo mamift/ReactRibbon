@@ -1,0 +1,25 @@
+@import '../scss/global.scss';
+@import '../scss/Colors.scss';
+
+.list-table {
+    thead {
+        h3, h4 {
+            display: inline-block;
+        }
+        h3 {
+            text-align: center;
+        }
+
+        p.secondary-title {
+            float: right;
+        }
+    }
+
+    tbody tr {
+        // cursor: pointer;
+    }
+
+    & .error thead th h3 {
+        color: $red;
+    }
+}

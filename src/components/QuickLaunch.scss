@@ -1,0 +1,190 @@
+@import '../scss/global.scss';
+
+// OMG THIS SOO NEEDS REFACTORING
+
+%default_navgiation {
+  margin-bottom: 15px;
+
+  & > li {
+    margin: 15px 0 25px 0;
+  }
+
+  .nav-group {
+    li {
+      a {
+        border: 1px solid transparent;
+        @extend %full_width_anchor;
+        color: $quickLaunchLinkColor;
+        padding: 2px 2px 3px 9px;
+        margin: 2px 0 2px 0;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.no-children {
+      margin:  15px 0;
+
+      @include mobile { margin: 0; }
+    }
+
+    .title {
+      padding-bottom: 5px;
+
+      @include mobile { padding-bottom: 0; }
+
+      a {
+        color: $quickLaunchLinkColorDark;
+        @extend %full_width_anchor;
+
+        &.router-link-active {
+          // font-size: 12px;
+          // font-weight: bold;
+          // text-decoration: underline;
+          color: $navHeaderlinkColor;
+          // font-variant: small-caps;
+          // &::after { content: ' *' }
+          @include mobile {
+            font-weight: normal;
+            text-decoration: underline !important;
+          }
+        }
+
+        // this displays the little star when the link is active
+        // display: inline;
+        // & + i { display: none; }
+        // &.router-link-active + i {
+        //     display: inline-block;
+        // }
+      }
+    }
+
+    li {
+      a.router-link-active, a:hover {
+        @extend %router_link_active;
+      }
+    }
+  }
+
+  ul li {
+    font-size: $defaultFontSize;
+  }
+}
+
+%default_ul_styling {
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 1.3em;
+
+    li a {
+      padding-left: 5px;
+      color: black;
+    }
+  }
+}
+
+.quicklaunch {
+  position: fixed;
+  float: left;
+  box-shadow: $headerBoxShadow;
+  z-index: 6;
+
+  width: $quicklaunchWidth + 5px;
+  min-height: $quicklaunchMinHeight;
+
+  margin-top: -1px;
+  // border: 1px solid $quicklaunchBorderColor;
+  border: 1px solid $toolbarBorderColor;
+  // border-top: none;
+  border-left: none;
+  background-color: $quicklaunchBackgroundColor;
+
+  padding-top: 5px;
+
+  @extend %default_ul_styling;
+
+  ul.navigation {
+    @extend %default_navgiation;
+  }
+
+  ul.footer-navigation {
+    @extend %default_navgiation;
+    font-size: 11px;
+    border-top: 1px solid #dbddde;
+    margin-top: 35px;
+
+    & > li {
+      margin: 6px 0;
+
+      &:first-child {
+        margin-top: 10px;
+      }
+    }
+
+    i { margin-right: 5px; }
+
+    .title a { @extend %full_width_anchor; }
+  }
+
+  @include mobile {
+    float: unset;
+    padding-top: unset;
+    display: flex;
+    min-height: unset;
+    width: 100%;
+    justify-content: center;
+
+    border-right: none;
+    // border-top: none;
+
+    ul.navigation {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      margin: 0;
+
+      li.nav-group {
+        margin: 0;
+        padding: 5px;
+        // min-width: 90px;
+        // display: flex;
+        .title + ul {
+          display: none;
+        }
+
+        &.no-children {
+          &:hover .title + ul {
+            // display: none;
+          }
+        }
+
+        &:hover .title + ul {
+          border-radius: 4px;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          z-index: 99;
+          position: absolute;
+          display: block;
+          border: 1px solid darken($quicklaunchBackgroundColor, 20%);
+          background-color: $quicklaunchBackgroundColor;
+          border-top-color: transparent;
+          padding: 5px;
+          margin-top: 5px;
+          box-shadow: $headerBoxShadow;
+        }
+
+        & > ul li a {
+          padding: 3px;
+          margin: 3px 0;
+        }
+      }
+    }
+
+    ul.footer-navigation {
+      display: none;
+    }
+  }
+}

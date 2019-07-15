@@ -1,0 +1,22 @@
+@import '../scss/global.scss';
+@import '../scss/RibbonVars.scss';
+
+$colorSchemes: (rgb(0, 173, 238), rgb(255, 55, 55), orange);
+
+.ribbon-bar {
+  cursor: default;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    // height: 100%;
+    border: 1px solid transparent;
+    box-shadow: none;
+  }
+
+  ul.ribbon {
+    // display: inline-block;
+  }
+}

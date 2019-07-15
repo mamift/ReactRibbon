@@ -1,0 +1,181 @@
+
+/**
+ * Bootstrap imports
+ */
+$icon-font-path: "../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import "./scss/_custom_bootstrap.scss";
+
+@import "./scss/global.scss";
+@import "./scss/RibbonVars.scss";
+
+body {
+  padding: 0;
+  margin: 0;
+
+  h1 { color: $heading1Color; }
+  h2 { color: $heading2Color; }
+  h3 { color: $heading3Color; }
+  h4 { color: $heading4Color; }
+  h5 { color: $heading5Color; }
+}
+
+#app {
+  &.container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+
+  font-family: $nonCustomFontStack;
+  font-size: $defaultFontSize;
+
+  h1, h2, h3, h4, h5 {
+    a { color: $defaultHeadingLinkColor; }
+  }
+
+  a:focus {
+    text-decoration: none;
+  }
+}
+
+.ribbon {
+  user-select: none;
+  box-shadow: $headerBoxShadow;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    height: $headerHeight;
+    // width: 100%;
+    background-color: $ribbonHeaderBackgroundColor;
+    color: white;
+
+    & > div {
+      height: 100%;
+    }
+
+    .ribbon-bar {
+      flex-basis: 90%;
+    }
+
+    .login-details {
+      flex-basis: 15%;
+      font-size: 9pt;
+
+      padding: ($headerHeight - 32px) 10px;
+      text-align: right;
+      margin-right: 1em;
+    }
+  }
+}
+
+.workspace {
+  margin-top: 95px;
+  // clear: both;
+  // float: left;
+  // width: 100%;
+
+  .workspace-content {
+    font-size: 10pt;
+    // text-align: center;
+    position: relative;
+    // margin-left: $quicklaunchWidth + 10px;
+    // padding-left: $defaultPadding;
+    // padding-top: $defaultPadding;
+    padding: $defaultPadding;
+    min-height: 320px;
+
+    @include mobile {
+      margin-top: 95px;
+      margin-left: 0;
+      padding: 45px 10px 10px 10px;
+      min-height: unset;
+      clear: both;
+    }
+
+    & > *:first-child {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  h1, h2 {
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 9pt 0;
+}
+
+h2 {
+  font-size: 1.9em;
+  margin: 6pt 0;
+}
+
+h3 {
+  color: $defaultHeadingColor;
+  font-size: 1.4em;
+  margin: 6pt 0;
+}
+
+h4 {
+  font-size: 1.20em;
+  margin: 3pt 0;
+}
+
+h5 {
+  font-size: 1.1em;
+}
+
+
+.two-col-flex {
+  display: flex;
+  // flex-basis: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 5px;
+  align-items: center;
+  justify-content: space-between;
+  // justify-content: center;
+
+  & > div:first-child {
+    flex-basis: 50%;
+    // border: 1px solid black;
+    // max-width: 50%;
+  }
+
+  & > div:last-child {
+    flex-basis: 50%;
+    // border: 1px solid black;
+    // max-width: 50%;
+  }
+
+  .spaced-content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.flex-vertical-centered {
+  display: flex;
+  align-items: center;
+}
+
+.btn-limbo {
+  background-color: $yellow;
+  color: white;
+
+  &:hover, &:focus {
+    color: white;
+    background-color: darken($yellow, 10%);
+  }
+}

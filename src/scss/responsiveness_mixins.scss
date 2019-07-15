@@ -1,0 +1,45 @@
+
+%hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+@mixin hidden {
+    display: none;
+    visibility: hidden;
+}
+
+@mixin device-desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin device-tablet {
+    @media (min-width: 769px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin device-phone {
+    @media (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: 1px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+.mobile-hide {
+    @include mobile {
+        @include hidden;
+    }
+}

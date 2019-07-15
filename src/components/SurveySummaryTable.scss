@@ -1,0 +1,33 @@
+
+.survey-summary-table {
+  tfoot tr td {
+    text-decoration: underline;
+    background-color: transparentize(lighten(gray, 45%), 0);
+  }
+
+  .panel-body {
+    padding: 10px;
+  }
+
+  td[colspan], th[colspan] {
+    text-align: center;
+  }    
+
+  .kpi {
+    display: flex;
+    // flex-basis: 50px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.summary-thead {
+  text-align: left;
+  .date {
+    font-weight: normal;
+  }
+  h1, h2, h3, span {
+    // display: flex;
+  }
+}

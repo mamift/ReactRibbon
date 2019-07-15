@@ -1,0 +1,1515 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"blb",
+				"blobDir"
+			],
+			[
+				"blo",
+				"blobDir"
+			],
+			[
+				"bl",
+				"blobDir"
+			],
+			[
+				"for",
+				"format\tmethod"
+			],
+			[
+				"obj",
+				"objet\tclass"
+			],
+			[
+				"move",
+				"moveContent\tproperty"
+			],
+			[
+				"lasb",
+				"lastBStyle"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"getele",
+				"getElementsByName\tmethod"
+			],
+			[
+				"SOC",
+				"SOCEC_STS_IDX_OUTPUT"
+			],
+			[
+				"CTR_",
+				"CTR_CD_AFTER_UPDATE"
+			],
+			[
+				"SOCEC_STS_IDX_",
+				"SOCEC_STS_IDX_EXISTING_OUTPUT"
+			],
+			[
+				"SOC_S",
+				"SOCEC_STS_IDX_EXISTING"
+			],
+			[
+				"CTR",
+				"CTR_CD"
+			],
+			[
+				"ctr",
+				"CTR_CD_EXISTING"
+			],
+			[
+				"SC",
+				"SOCEC_STS_IDX"
+			],
+			[
+				"valu",
+				"valuesTbl"
+			],
+			[
+				"valuet",
+				"valueCte"
+			],
+			[
+				"bordco",
+				"borderColor"
+			],
+			[
+				"borst",
+				"borderStyle"
+			],
+			[
+				"borderc",
+				"border-color"
+			],
+			[
+				"tbl",
+				"tbl2TransactionRowCount"
+			],
+			[
+				"NSS_",
+				"NSS_CIS_CENTRE_Additional"
+			],
+			[
+				"deew",
+				"deewrIds"
+			],
+			[
+				"aca",
+				"acaraSchIds"
+			],
+			[
+				"ac",
+				"acaraSchIds"
+			],
+			[
+				"ogr",
+				"ogr_fid"
+			],
+			[
+				"ex",
+				"expectedRowCount"
+			],
+			[
+				"INC",
+				"INC9664232_OLD_FDEC_VALUES"
+			],
+			[
+				"F",
+				"FDRL_ELCT_DIST_CD"
+			],
+			[
+				"Linea",
+				"LinearGradientStop1"
+			],
+			[
+				"Parse",
+				"ParseArguments"
+			],
+			[
+				"Comma",
+				"CommandLineOptions"
+			],
+			[
+				"Pars",
+				"ParseArguments"
+			],
+			[
+				"return",
+				"returnValue"
+			],
+			[
+				"instan",
+				"instancesOfPyValuesForProgramLowYearLevelCode"
+			],
+			[
+				"ce",
+				"censusMonth"
+			],
+			[
+				"CIS",
+				"CIS_CENTRE"
+			],
+			[
+				"first",
+				"firstString"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ReactRibbon.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rtw",
+				"Whitespace: Remove Trailing Whitespace"
+			],
+			[
+				"ss c#",
+				"Set Syntax: C#"
+			],
+			[
+				"indent",
+				"Indentation: convert 4-space tabs to 2-space spaces"
+			],
+			[
+				"inde",
+				"Indentation: convert 4-space tabs to 2-space spaces"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"wwt",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ss sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"t-sql",
+				"Snippet: T-SQL define new cursor"
+			],
+			[
+				"insert into",
+				"Snippet: T-SQL - Bulk insert from csv"
+			],
+			[
+				"snippet sql",
+				"Snippet: Wrap SQL in transaction block"
+			],
+			[
+				"snippet table",
+				"Snippet: Create backup SQL table using object_id and SELECT INTO"
+			],
+			[
+				"cte",
+				"Snippet: SQL Common Table Expression to hold values"
+			],
+			[
+				"ss razo",
+				"Set Syntax: Razor"
+			],
+			[
+				"ss slq",
+				"Set Syntax: SQL"
+			],
+			[
+				"ss tsql",
+				"Snippet: T-SQL - Bulk insert from csv"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"ss json",
+				"Set Syntax: JSON"
+			],
+			[
+				"ss powe",
+				"Set Syntax: PowerShell"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"indentiona",
+				"Indentation: convert 4-space tabs to 2-space spaces"
+			],
+			[
+				"INstl",
+				"Package Control: Install Package"
+			],
+			[
+				"autosa",
+				"Toggle AutoSave: all files"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"curs",
+				"Snippet: T-SQL define new cursor"
+			],
+			[
+				"curso",
+				"Snippet: T-SQL define new cursor"
+			],
+			[
+				"sql objec",
+				"Snippet: Create backup SQL table using object_id and SELECT INTO"
+			],
+			[
+				"merge ",
+				"Snippet: Merge SQL statement using target and source tables"
+			],
+			[
+				"scope",
+				"Toggle ScopeAlways"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"snipp",
+				"Snippet: SQL Common Table Expression to hold values"
+			],
+			[
+				"wrap",
+				"Snippet: Wrap SQL in transaction block"
+			],
+			[
+				"ss antl",
+				"Set Syntax: Antlr"
+			],
+			[
+				"ss jsa",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta p",
+				"Package Control: Install Package"
+			],
+			[
+				"ss javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ss jsava",
+				"Project: Save As"
+			],
+			[
+				"ss scala",
+				"Set Syntax: Scala"
+			],
+			[
+				"ss ",
+				"Set Syntax: Rust"
+			],
+			[
+				"ss go",
+				"Set Syntax: Go"
+			],
+			[
+				"ss rub",
+				"Set Syntax: Ruby"
+			],
+			[
+				"ss jav",
+				"Set Syntax: Java"
+			],
+			[
+				"ss java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ss javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ss qsl",
+				"Set Syntax: SQL (Rails)"
+			],
+			[
+				"ss xml",
+				"Set Syntax: XML"
+			],
+			[
+				"ss pla",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ss plai",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ss jas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ss tsq",
+				"Set Syntax: SQL"
+			],
+			[
+				"ssq",
+				"Set Syntax: SQL"
+			],
+			[
+				"ss ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ss javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ss js",
+				"Set Syntax: JSON"
+			],
+			[
+				"ss html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ss css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ss mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"list pac",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"list ps",
+				"Package Control: List Packages"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"ss html (",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"ss asp",
+				"Set Syntax: ASP"
+			],
+			[
+				"ss C#",
+				"Set Syntax: C#"
+			],
+			[
+				"tfs sta",
+				"TFS: Status"
+			],
+			[
+				"settings ",
+				"Preferences: Sublime TFS Settings – Default"
+			],
+			[
+				"ss yaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"ss power",
+				"Set Syntax: PowerShell"
+			],
+			[
+				"goo",
+				"Google Search: Search any"
+			],
+			[
+				"ss pat",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"emjo",
+				"Emoji: Insert Emoji"
+			],
+			[
+				"ss hmtl",
+				"Set Syntax: HTML"
+			],
+			[
+				"expand",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"ss c",
+				"Set Syntax: C#"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ssc#",
+				"Set Syntax: C#"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"TSQL",
+				"TSQL Easy: Activity monitor"
+			],
+			[
+				"instali",
+				"InsertDate: Select Timezone"
+			],
+			[
+				"preference: insert",
+				"Preferences: InsertDate Keybindings - Default"
+			],
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			],
+			[
+				"ssc c#",
+				"Set Syntax: C#"
+			],
+			[
+				"ss d",
+				"Set Syntax: D"
+			],
+			[
+				"s sjavacs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ss objec",
+				"Set Syntax: Objective-C"
+			],
+			[
+				"ww t",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ss pow",
+				"Set Syntax: PowerShell"
+			],
+			[
+				"ss obj",
+				"Set Syntax: Objective-C"
+			],
+			[
+				"ss bash",
+				"Set Syntax: Bourne Again Shell (bash)"
+			],
+			[
+				"ss jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"ss ini",
+				"Set Syntax: INI"
+			],
+			[
+				"s sin",
+				"Set Syntax: INI"
+			],
+			[
+				"ss init",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"remowhi",
+				"Whitespace: Remove Trailing Whitespace"
+			],
+			[
+				"high",
+				"Highlight Whitespaces: Toggle"
+			],
+			[
+				"instapa",
+				"Package Control: Install Package"
+			],
+			[
+				"whitesp",
+				"Whitespace: Remove Trailing Whitespace"
+			],
+			[
+				"instal pa",
+				"Package Control: Install Package"
+			],
+			[
+				"open ",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"ss yml",
+				"Set Syntax: YAML"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"pla",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"yaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings"
+			],
+			[
+				"ss lisp",
+				"Set Syntax: Lisp"
+			],
+			[
+				"set syntax: yaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"set syntax: xml",
+				"Set Syntax: XML"
+			],
+			[
+				"set syntax: java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set syntax: json",
+				"Set Syntax: JSON"
+			],
+			[
+				"set syntax: thml",
+				"Set Syntax: HTML"
+			],
+			[
+				"set syntax: css",
+				"Set Syntax: CSS"
+			],
+			[
+				"set syntax: cs",
+				"Set Syntax: CSS"
+			],
+			[
+				"ss csv",
+				"Sort Lines (Case Sensitive)"
+			],
+			[
+				"remo pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pack inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"sublime.log_commands(False)",
+			"sublime.log_commands(True)",
+			"``sublime.log_commands(True)``"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/W/Projects/ReactRibbon"
+	],
+	"file_history":
+	[
+		"/W/Projects/ReactRibbon/src/components/RibbonBar.tsx",
+		"/W/Projects/ReactRibbon/src/components/RibbonTabButton.tsx",
+		"/W/Projects/ReactRibbon/src/App.tsx",
+		"/C/Users/mamif0/Documents/WindowsPowerShell/Scripts/uploadRepos.ps1",
+		"/W/Github repos/Krypton-NET-5.470-master/README.md",
+		"/W/Projects/LinqToXsdCore/XObjectsTests/Schemas/Toy schemas/Simple doc.xsd",
+		"/W/Projects/ReactRibbon/package.json",
+		"/W/Projects/bpaadmindashboard-master/src/App.test.tsx",
+		"/W/Projects/bpaadmindashboard-master/src/App.scss",
+		"/W/Projects/bpaadmindashboard-master/src/components/QuickLaunch.scss",
+		"/W/Projects/bpaadmindashboard-master/src/components/Ribbon.tsx",
+		"/W/Projects/bpaadmindashboard-master/src/components/RibbonTabGroup.scss",
+		"/W/Projects/bpaadmindashboard-master/src/components/RibbonBar.scss",
+		"/W/Projects/bpaadmindashboard-master/src/components/RibbonToolbar.scss",
+		"/W/Projects/bpaadmindashboard-master/src/components/SurveySummaryTable.scss",
+		"/W/Projects/bpaadmindashboard-master/src/components/Trail.scss",
+		"/W/Projects/bpaadmindashboard-master/src/components/Card.scss",
+		"/W/Projects/bpaadmindashboard-master/src/components/Chart.scss",
+		"/W/Projects/bpaadmindashboard-master/src/components/Dashboard.scss",
+		"/W/Projects/bpaadmindashboard-master/src/components/BackStage.scss",
+		"/W/Projects/bpaadmindashboard-master/src/classes/RoutingContext.ts",
+		"/W/Projects/bpaadmindashboard-master/tsconfig.json",
+		"/W/Projects/DashboardFrontend-master/src/main.js",
+		"/C/Users/mamif0/Documents/WindowsPowerShell/Scripts/compressFolder.ps1",
+		"/W/Projects/DashboardFrontend-master/src/vue-plugins/vue-d3.js",
+		"/W/Projects/DashboardFrontend-master/src/routes.js",
+		"/W/Projects/DashboardFrontend-master/package.json",
+		"/W/Projects/DashboardFrontend-master/build/webpack.base.conf.js",
+		"/W/Projects/exip-0.4.1/grammarGenerator.xml",
+		"/W/Projects/exip-0.4.1/examples/README.txt",
+		"/W/Projects/DF-master/src/App.vue",
+		"/W/Projects/DF-master/src/main.ts",
+		"/W/Projects/VueRibbonReCreation/build/webpack.base.conf.js",
+		"/W/Projects/VueRibbonReCreation/src/App.vue",
+		"/W/Projects/VueRibbonReCreation/package.json",
+		"/W/Projects/VueRibbonReCreation/src/main.ts",
+		"/W/Projects/VueRibbonReCreation/src/App.scss",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/User/Default.sublime-commands",
+		"/C/Users/mamif0/Documents/LINQPad Queries/cis_torrens.html",
+		"/C/Users/mamif0/Documents/Incident + Change Management/INC9790976/INC9403954/SQL Query.sql",
+		"/C/Users/mamif0/Documents/Incident + Change Management/INC9790976/INC9790976.sql",
+		"/C/Users/mamif0/Documents/WindowsPowerShell/Scripts/enableProxy.ps1",
+		"/C/Users/mamif0/source/Workspaces/CIS/Branches/DEV/Source/DET.CIS/DET.CIS.WebForms/Views/Administration/ListUsers.cshtml",
+		"/W/Projects/Indicium/IndiciumTests/bin/Debug/netcoreapp2.1/RoslynCode.cs",
+		"/D/TemporaryX/_audit_cis_cc_users.txt",
+		"/C/Users/mamif0/source/Workspaces/CIS/Branches/DEV/Source/DET.CIS/DET.CIS.WebForms/Web.Debug.config",
+		"/W/Github repos/CSharpSyntax-master/CSharpSyntax/NameParsing/CSharpNames.g",
+		"/C/Users/mamif0/AppData/Roaming/NuGet/NuGet.Config",
+		"/W/Github repos/CSharpSyntax-master/README.markdown",
+		"/W/Projects/Indicium/IndiciumTests/lyrics.txt",
+		"/C/Users/mamif0/Documents/WindowsPowerShell/Scripts/uploadFileAsBlob.ps1",
+		"/C/Users/mamif0/Documents/WindowsPowerShell/Scripts/compressAndUpload.ps1",
+		"/C/Users/mamif0/Documents/WindowsPowerShell/Scripts/Recycle-Item.ps1",
+		"/C/Users/mamif0/Documents/WindowsPowerShell/Scripts/dlextract7zBlob.ps1",
+		"/C/Users/mamif0/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/VGLMOS20/email.txt",
+		"/W/Projects/WSS.XSD/WSS.XSD/caml_simplification.xsd",
+		"/C/Users/mamif0/Documents/WindowsPowerShell/Scripts/bakSubl3Stuff.ps1",
+		"/W/Projects/compressAndUpload.ps1",
+		"/C/Users/mamif0/Documents/WindowsPowerShell/Scripts/downloadBlob.ps1",
+		"/W/Projects/VueRibbonReCreation/static/routes.json",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/User/Macros/4-tab-spaces-to-2-spaces.sublime-macro",
+		"/W/Projects/VueRibbonReCreation/src/scss/Colors.scss",
+		"/W/Projects/VueRibbonReCreation/src/components/RibbonTabGroup.scss",
+		"/W/Projects/VueRibbonReCreation/src/components/RibbonTabGroup.vue",
+		"/W/Github repos/ecs-snake-master/Packages/manifest.json",
+		"/W/Github repos/ecs-snake-master/ProjectSettings/ProjectSettings.asset",
+		"/W/Github repos/ecs-snake-master/ProjectSettings/ProjectVersion.txt",
+		"/W/Projects/VueRibbonReCreation/src/components/RibbonButtonGroup.vue",
+		"/W/Projects/VueRibbonReCreation/VueRibbonReCreation.sublime-project",
+		"/C/Users/mamif0/Desktop/WCIS_MPE_Config_transformed.xml",
+		"/C/Users/mamif0/Desktop/pi.txt",
+		"/W/Projects/IE_WebPack_template/package.json",
+		"/W/Projects/IE_WebPack_template/src/main.ts",
+		"/W/Projects/IE_WebPack_template/src/ts/prototype_String.ts",
+		"/W/Projects/IE_WebPack_template/dist/index.html",
+		"/W/Projects/IE_WebPack_template/README.md",
+		"/W/Projects/IE_WebPack_template/src/ts/prototype_Function.ts",
+		"/W/Projects/IE_WebPack_template/globalInstall.bat",
+		"/W/Projects/IE_WebPack_template/dist/app.js",
+		"/W/Projects/IE_WebPack_template/src/ts/functions.js",
+		"/W/Projects/IE_WebPack_template/webpack.config.js",
+		"/C/Users/mamif0/AppData/Local/Yarn/Data/global/package.json",
+		"/W/Projects/IE_WebPack_template/yarnInstall.bat",
+		"/W/Projects/IE_WebPack_template/globalinstall.bat",
+		"/W/Projects/IE_WebPack_template/src/ts/prototype_jQuery.ts",
+		"/W/Projects/IE_WebPack_template/src/ts/prototype_jQuery.js",
+		"/W/Projects/IE_WebPack_template/tsconfig.json",
+		"/C/Users/mamif0/npm_u.bat",
+		"/C/Users/mamif0/MountVHD.txt",
+		"/C/Users/mamif0/av.txt",
+		"/C/Users/mamif0/npm_u.ps1",
+		"/C/Users/mamif0/list.txt",
+		"/W/Projects/IE_WebPack_template/IE_WebPack_template.sublime-project",
+		"/J/downloads/downloadList.txt",
+		"/W/Tests/WCIS-WebTest/WCIS-WebTest/WcisHomePageController.cs",
+		"/W/output.cs",
+		"/W/Projects/Indicium/Indicia/Excipient.tkng",
+		"/W/Chrome extensions/SSNav/popup.js",
+		"/E/x64/Package.xsd",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/TypeScript/TypeScript.tmLanguage",
+		"/C/Users/mamif0/.npmrc",
+		"/W/Chrome extensions/SSNav/options.js",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/auto-save/auto_save.sublime-settings",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/User/auto_save.sublime-settings",
+		"/W/Chrome extensions/SSNav/SSNav.sublime-project",
+		"/W/Chrome extensions/SSNav/types/chrome/tsconfig.json",
+		"/C/Users/mamif0/AppData/Local/Temp/.NETCoreApp,Version=v2.1.AssemblyAttributes.cs",
+		"/W/Github repos/WpfExpressionBlendTheme-master/nuget/readme.txt",
+		"/W/Github repos/WpfExpressionBlendTheme-master/nuget/WPFThemes.DarkBlend.nuspec",
+		"/W/Github repos/WpfExpressionBlendTheme-master/DarkBlendTheme/Themes/TreeViewItemExtensions.cs",
+		"/W/Github repos/WpfExpressionBlendTheme-master/DarkBlendTheme/Themes/LeftMarginMultiplierConverter.cs",
+		"/W/Github repos/WpfExpressionBlendTheme-master/DarkBlendTheme/Themes/Styles.xaml",
+		"/W/Github repos/WpfExpressionBlendTheme-master/DarkBlendTheme/MainWindow.xaml",
+		"/W/Projects/ResumeML/dc/dcterms.xsd",
+		"/W/Projects/Indicium/Indicia/bin/Debug/CodeDom.cs",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/T-SQL define new cursor.sublime-snippet",
+		"/C/Users/mamif0/source/Workspaces/CIS/Scripts/Support Scripts/INC9735667_check.sql",
+		"/C/Users/mamif0/Documents/Incident + Change Management/INC9721286/INC9721286 repair script.sql",
+		"/C/Users/mamif0/source/Workspaces/CIS/Scripts/Support Scripts/INC9735667_rollback.sql",
+		"/C/Users/mamif0/source/Workspaces/CIS/Scripts/Support Scripts/INC9635623_CIS_COMMONWEALTH_SCHOOL_ID_update.sql",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/T-SQL - Check if thing exists using OBJECT_ID.sublime-snippet",
+		"/C/Users/mamif0/source/Workspaces/CIS/Scripts/Support Scripts/INC9735667.sql",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/Get DDL from an SQL statement that returns a result set.sublime-snippet",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/Merge SQL statement using target and source tables.sublime-snippet",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/SQL Common Table Expression to hold values.sublime-snippet",
+		"/C/Users/mamif0/AppData/Roaming/Sublime Text 3/Packages/User/Snippets/Wrap SQL in transaction block.sublime-snippet",
+		"/C/Users/mamif0/source/Workspaces/CIS/Scripts/Support Scripts/INC9705965_update.sql",
+		"/C/Users/mamif0/source/Workspaces/CIS/Scripts/Support Scripts/INC9728992_update.sql"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+			"-node_modules/",
+			"-/node_modules/",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"for ",
+			"CIS to",
+			"CIS and",
+			"CCIS",
+			"between",
+			"between CIS and \\w+",
+			"between CIS",
+			"main summary goes here",
+			"vue-d3",
+			"xmlhttp",
+			"XMLHttpRequest",
+			"XmlHttpRequest",
+			".GetHashCode",
+			"UserId",
+			"obj.",
+			"\\n",
+			"string.isNullOrEmpty",
+			"\\t ",
+			" ",
+			"GVN_NAMES",
+			"\"",
+			"$\"",
+			" \\{",
+			"\\w}",
+			"$\"",
+			"&&",
+			"x.UserId == y.UserId && x.Surname == y.Surname && x.GivenName == y.GivenName && x.PreferredName == y.PreferredName && x.Email == y.Email;",
+			"&&",
+			"+ ",
+			"+",
+			"?? 0",
+			"@user.",
+			",",
+			"BO\\d$",
+			"BkupOfficer",
+			"Bkup\\w+\\dId",
+			"Bkup\\w+\\d",
+			"BO",
+			"_",
+			",",
+			"\\w\\.",
+			"As",
+			"\"\"",
+			"\\n +",
+			"\"",
+			"$noExt",
+			"WSS.XSD.7z",
+			"WSS.XSD.7z ",
+			"blobName",
+			"down",
+			"\\",
+			"color",
+			"text=\"Tab",
+			"yellow",
+			"orange",
+			"color=",
+			"workunitbreakdown",
+			"Links.svc",
+			"responserate",
+			"Work",
+			"ll",
+			"Format",
+			"format",
+			"ws",
+			"@^",
+			"\"",
+			":",
+			"add",
+			"@^",
+			" ",
+			"\"",
+			": \"",
+			"@^",
+			"@",
+			"add",
+			"tsif",
+			"gulp",
+			"ts-loader",
+			"process.env.HOME",
+			"@",
+			"gulp",
+			"call",
+			"@",
+			"+--"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ReactRibbon.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ReactRibbon.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Ribbontab",
+				"src\\components\\RibbonTabButton.tsx"
+			],
+			[
+				"ribbonbar",
+				"src\\components\\RibbonBar.tsx"
+			],
+			[
+				"app.tsx",
+				"src\\App.tsx"
+			],
+			[
+				"apptes",
+				"src\\App.test.tsx"
+			],
+			[
+				"ribb",
+				"src\\components\\Ribbon.tsx"
+			],
+			[
+				"cards",
+				"src\\components\\Card.scss"
+			],
+			[
+				"chart",
+				"src\\components\\Chart.scss"
+			],
+			[
+				"src",
+				"src\\classes\\RoutingContext.ts"
+			],
+			[
+				"vued3",
+				"src\\vue-plugins\\vue-d3.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"routes",
+				"src\\routes.js"
+			],
+			[
+				"webpack.base",
+				"build\\webpack.base.conf.js"
+			],
+			[
+				"route",
+				"src\\routes.js"
+			],
+			[
+				".vue",
+				"App.vue"
+			],
+			[
+				"main",
+				"main.ts"
+			],
+			[
+				"web",
+				"build\\webpack.base.conf.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"appv",
+				"src\\App.vue"
+			],
+			[
+				"app.scs",
+				"src\\App.scss"
+			],
+			[
+				"app.",
+				"src\\App.vue"
+			],
+			[
+				"app.vue",
+				"src\\App.vue"
+			],
+			[
+				"appvue",
+				"src\\App.vue"
+			],
+			[
+				"ribtagrou",
+				"src\\components\\RibbonTabGroup.scss"
+			],
+			[
+				"ribbtagrou",
+				"src\\components\\RibbonTabGroup.vue"
+			],
+			[
+				"RibbonButtonGroup",
+				"src\\components\\RibbonButtonGroup.vue"
+			],
+			[
+				"colo",
+				"src\\scss\\Colors.scss"
+			],
+			[
+				"app",
+				"src\\App.vue"
+			],
+			[
+				"vue",
+				"VueRibbonReCreation.sublime-project"
+			],
+			[
+				"vueri",
+				"VueRibbonReCreation.sublime-project"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"prots",
+				"src\\ts\\prototype_String.ts"
+			],
+			[
+				"prot",
+				"src\\ts\\prototype_Function.ts"
+			],
+			[
+				"tsfu",
+				"src\\ts\\functions.js"
+			],
+			[
+				"glob",
+				"globalInstall.bat"
+			],
+			[
+				"yarnin",
+				"yarnInstall.bat"
+			],
+			[
+				"protjq",
+				"src\\ts\\prototype_jQuery.ts"
+			],
+			[
+				"tscon",
+				"tsconfig.json"
+			],
+			[
+				"tsc",
+				"tsconfig.json"
+			],
+			[
+				"yarn",
+				"yarnInstall.bat"
+			],
+			[
+				"webpackcon",
+				"webpack.config.js"
+			],
+			[
+				"glba",
+				"globalinstall.bat"
+			],
+			[
+				"webc",
+				"webpack.config.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"back",
+				"background.js"
+			],
+			[
+				"mani",
+				"manifest.json"
+			],
+			[
+				"map.cs",
+				"GmlImport\\map.cs"
+			],
+			[
+				"smilxsd",
+				"GmlImport\\GmlSchemas\\smil20.xsd"
+			],
+			[
+				"xlink",
+				"GmlImport\\GmlSchemas\\xlink.xsd"
+			],
+			[
+				"gmlbase",
+				"GmlImport\\GmlSchemas\\gmlBase.xsd"
+			],
+			[
+				"defaultst",
+				"GmlImport\\GmlSchemas\\defaultStyle.xsd"
+			],
+			[
+				"cismer",
+				"C:\\Users\\mamif0\\Documents\\Incident + Change Management\\INC9664232\\cis_merge.sql"
+			],
+			[
+				"cspro",
+				"Vba.Grammars.csproj"
+			],
+			[
+				"Webapplcs",
+				"WebApplication4.csproj"
+			],
+			[
+				"blu",
+				"MyServices.CorpDashboard.Web\\Content\\Leaflet\\images\\blue_circle.gif"
+			],
+			[
+				"up_Service_Now_Transform_Data",
+				"MyServices.Database\\dbo\\Stored Procedures\\up_Service_Now_Transform_Data.sql"
+			],
+			[
+				"up_Location_Centres_Mapping",
+				"MyServices.Database\\dbo\\Stored Procedures\\up_Location_Centres_Mapping.sql"
+			],
+			[
+				"up_Internal_Sites_Transform_Data",
+				"MyServices.Database\\dbo\\Stored Procedures\\up_Internal_Sites_Transform_Data.sql"
+			],
+			[
+				"uf_Get_Site_Domain_Name",
+				"MyServices.Database\\dbo\\Functions\\uf_Get_Site_Domain_Name.sql"
+			],
+			[
+				"up_Add_Site_Classification",
+				"MyServices.Database\\dbo\\Stored Procedures\\up_Add_Site_Classification.sql"
+			],
+			[
+				"uf_Get_CFT_Eligible_Staff_Count",
+				"MyServices.Database\\dbo\\Functions\\uf_Get_CFT_Eligible_Staff_Count.sql"
+			],
+			[
+				"up_Add_CFT_Eligible_Staff_Count",
+				"MyServices.Database\\dbo\\Stored Procedures\\up_Add_CFT_Eligible_Staff_Count.sql"
+			],
+			[
+				"up_Data_Purging",
+				"MyServices.Database\\dbo\\Stored Procedures\\up_Data_Purging.sql"
+			],
+			[
+				"uf_Split_Delimited_String",
+				"MyServices.Database\\dbo\\Functions\\uf_Split_Delimited_String.sql"
+			],
+			[
+				"up_MyServices_Batch_Jobs",
+				"MyServices.Database\\dbo\\Stored Procedures\\up_MyServices_Batch_Jobs.sql"
+			],
+			[
+				"myserviceauto",
+				"MyServices.ICTDashboard.Artefacts\\Automation\\MyServices_Automation.ps1"
+			],
+			[
+				"webcon",
+				"DET.CIS.WebForms\\Web.config"
+			],
+			[
+				"eipcustomstu",
+				"DET.CIS.Database\\dbo\\Stored Procedures\\up_EIP_Custom_STU.sql"
+			],
+			[
+				"inc945",
+				"H:\\Incidents\\INC9453463.sql"
+			],
+			[
+				"inc954",
+				"H:\\Incidents\\INC9453463.sql"
+			],
+			[
+				"inc9Update",
+				"C:\\Users\\mamif0\\Documents\\SQL Server Management Studio\\CIS Incidents\\INC9543483_UPDATE.sql"
+			],
+			[
+				"INC954",
+				"H:\\Incidents\\INC9453463.sql"
+			],
+			[
+				"web.confi",
+				"DET.CIS.WebForms\\Web.config"
+			],
+			[
+				"global as",
+				"DET.CIS.WebForms\\Global.asax.cs"
+			],
+			[
+				"glboalas",
+				"DET.CIS.WebForms\\Global.asax"
+			],
+			[
+				"buil",
+				"build.bat"
+			],
+			[
+				"webdebug",
+				"Web.Debug.config"
+			],
+			[
+				"debugql",
+				"SchoolsDirectory.Database\\debugTestSqlUser.sql"
+			],
+			[
+				"web debug config",
+				"SchoolsDirectory.Web\\Web.Debug.config"
+			],
+			[
+				"database\\debugsql",
+				"SchoolsDirectory.Database\\debugTestSqlUser.sql"
+			],
+			[
+				"schoolsdirectory.web web.config",
+				"SchoolsDirectory.Web\\Web.config"
+			],
+			[
+				"web web.config",
+				"SchoolDirProto\\Web.config"
+			],
+			[
+				"web.config debug",
+				"SchoolsDirectory.Web\\Web.Debug.config"
+			],
+			[
+				"CIS_Centre.desi",
+				"SchoolsDirCode\\CIS_Centre.Designer.cs"
+			],
+			[
+				"wc",
+				"wcis_Lookups.linq"
+			],
+			[
+				".xsd",
+				"packages\\Unity.3.0.1304.1\\UnityConfiguration30.xsd"
+			],
+			[
+				"file",
+				"files.txt"
+			],
+			[
+				"biul",
+				"build.bat"
+			],
+			[
+				"web.conf",
+				"Web.config"
+			],
+			[
+				"project2",
+				"DET.CIS.Database\\Project2Db.scmp"
+			],
+			[
+				"db2proj",
+				"DET.CIS.Database\\Db2Project.scmp"
+			],
+			[
+				"cov",
+				"BookCoverDemo\\rant\\cover.rant"
+			],
+			[
+				"bookmov",
+				"BookCoverDemo\\BookViewModel.cs"
+			],
+			[
+				"bookmodel",
+				"BookCoverDemo\\BookModel.cs"
+			],
+			[
+				"",
+				"DarkBlendTheme\\Properties\\DesignTimeResources.xaml"
+			],
+			[
+				"resour",
+				"DarkBlendTheme\\Properties\\Resources.resx"
+			],
+			[
+				"web.c",
+				"Web.config"
+			],
+			[
+				".config",
+				"Web.config"
+			],
+			[
+				"application",
+				"ApplicationInsights.config"
+			],
+			[
+				"legac",
+				"SchoolsDirectory.Business\\LegacyApiServices.cs"
+			],
+			[
+				"scho",
+				"SchoolsDirectory.sln"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\mamif0\\Documents\\SchoolsDirectory.sublime-project"
+			],
+			[
+				"scho",
+				"C:\\Users\\mamif0\\Documents\\SchoolsDirectory.sublime-project"
+			],
+			[
+				"linq",
+				"C:\\Users\\mamif0\\Documents\\LINQPad Queries\\LINQPadQueries.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 69.0,
+		"last_filter": "isnul",
+		"selected_items":
+		[
+			[
+				"isnul",
+				"isNullorEmptyOrWhitespace"
+			],
+			[
+				"isnull",
+				"isNullorEmptyOrWhitespace"
+			]
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 256.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

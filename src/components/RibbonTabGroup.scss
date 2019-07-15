@@ -1,0 +1,89 @@
+@import '../scss/global.scss';
+@import '../scss/RibbonVars.scss';
+
+$colorValues: ($blue, $red, $orange, $green, $teal, darken($yellow, 10%));
+$colors: (blue, red, orange, green, teal, yellow);
+
+@for $i from 1 through length($colorValues) {
+  $colorValue: nth($colorValues, $i);
+  $colorName: nth($colors, $i);
+
+  li.ribbon-group.#{$colorName} {
+    ul.ribbon-subgroup {
+      height: auto;
+      border-bottom: none;
+      border-top: none;
+      @include ribbonSubgroupSharedStyling($colorValue);
+
+      li.ribbon-tabbutton {
+        span.title {
+          margin-top: 0px;
+          border-bottom: none;
+        }
+      }
+    }
+
+    .subgroup-title {
+      @include sharedRibbonSubgroupAndTitleStyling($colorValue);
+      background: ribbonSubgroupGradient($colorValue);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      height: 24px;
+      text-align: center;
+      padding-top: 3px;
+      padding-bottom: 5px;
+    }
+
+    /**
+     * This styling is applied if the ribbon-subgroup has no text passed to it as a title.
+     * The RibbonTabGroup.vue component will apply this specific class and hide the top part
+     * of the title of the ribbon subgroup.
+     *
+     * TODO: Need to refactor into more placeholders or mixins
+     */
+    .no-subgroup-title {
+      height: 24px;
+      text-align: center;
+      padding-top: 3px;
+      padding-bottom: 5px;
+      // border-left: none;
+      // border-right: none;
+
+      & + .ribbon-subgroup {
+        border-left: none;
+        border-right: none;
+
+        li.ribbon-tabbutton {
+          // border: 1px solid transparent;
+          // border-bottom: none;
+
+          span.title {
+            border: 1px solid transparent;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-bottom: none;
+
+            &:last-child, &:first-child {
+              border-left: 1px solid transparent;
+              border-right: 1px solid transparent;
+            }
+
+            &:hover {
+              border-color: $colorValue;
+              border-bottom: none;
+            }
+          }
+
+          &:hover {
+            // border: 1px solid $red;
+            // border-bottom: none;
+            // border-top: none;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+          }
+        }
+      }
+    }
+}
+
+}
