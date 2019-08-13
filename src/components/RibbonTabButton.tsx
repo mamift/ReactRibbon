@@ -44,13 +44,8 @@ export default class RibbonTabButton extends React.Component<RibbonTabButtonProp
     }
     return classes
   }
-
   public clickHandler(event: Event) {
-    console.log('clicked, by ', event.target)
-
-    if (this.props.children) {
-      console.log(this.props.children)
-    }
+    console.log(`RibbonTabButton '${this.props.name}'`, event.target)
   }
 
   /**

@@ -1,6 +1,7 @@
 import * as React from 'react'
 
-import BackStageContext, { BackStageContextObject } from '../classes/BackStageContext'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
+import BackStageContext from '../classes/BackStageContext'
 
 import './FileMenu.scss'
 
@@ -31,22 +32,21 @@ export default class FileMenu extends React.Component<FileMenuProps, object> {
   }
 
   clickHandler(event: Event) {
-
     let newState: FileMenuState = {
       isShowing: !this.state.isShowing
     }
 
     this.setState(newState)
-
-    console.log(this.state)
   }
 
   render() {
     return (
       <div className="file-menu">
-        <button className={this.state.isShowing ? 'file-menu focus' : 'file-menu'} onClick={ (e?: any) => { this.clickHandler(e) }}>
-          {this.props.children || this.props.text}
-        </button>
+        <Link to={this.state.isShowing ? "/backstage" : "/home"}>
+          <button className={this.state.isShowing ? 'file-menu focus' : 'file-menu'} onClick={ (e?: any) => { this.clickHandler(e) }}>
+            {this.props.text}
+          </button>
+        </Link>
       </div>
     )
   }

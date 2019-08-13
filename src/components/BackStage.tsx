@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import BackStageContext, { BackStageContextObject } from '../classes/BackStageContext'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 
 import './BackStage.scss'
 
@@ -19,8 +20,13 @@ export default class BackStage extends React.Component {
   get divBackStageStyles(): object {
     return {
       height: `${this.backStageHeight}px`,
-      overflow: 'auto'
+      overflow: 'auto',
+      display: `${this._isVisible ? 'none' : 'block'}`
     }
+  }
+
+  componentDidMount() {
+
   }
 
   /**
