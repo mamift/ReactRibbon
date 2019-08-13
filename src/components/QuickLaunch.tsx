@@ -1,5 +1,6 @@
 import * as React from 'react'
 
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
 
 import QuickLaunchGroup from './QuickLaunchGroup'
@@ -12,7 +13,7 @@ export interface QuickLaunchProps {
 
 export default class QuickLaunch extends React.Component<QuickLaunchProps, object> {
   render() {
-    let defaultLinkObject = new LinkObject('Header link')
+    let defaultLinkObject = new LinkObject('Administration', "/administration")
     let testingChildren = [new LinkObject('test 1'), new LinkObject('test 2')]
 
     return (

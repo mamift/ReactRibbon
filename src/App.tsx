@@ -37,12 +37,14 @@ const RouteList = [
   }
 ]
 
+const backstage = () => (<BackStage />)
+
 export const AppLayout = () => (
   <BrowserRouter>
     <div id="app" className="container-fluid">
       <Ribbon>
         <RibbonHeader>
-          <FileMenu text="Home"><Link to="/">Home</Link></FileMenu>
+          <FileMenu text="Home" />
           <RibbonBar>
             <RibbonTabButton name="summary" text="Summary">
               Summary
@@ -63,11 +65,13 @@ export const AppLayout = () => (
         </RibbonToolbar>
       </Ribbon>
 
-      <BackStage />
+      <Route path="/backstage" component={BackStage}/>
+      <Route path="/home" />
 
       <Workspace showQuickLaunch={true}>
-        <p>OI! some content goes here</p>  
+        <p>OI! some content goes here</p>
       </Workspace>
+
     </div>
   </BrowserRouter>
 )
@@ -78,8 +82,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    var authSvc = new Auth()
-    // authSvc.login()
+
   }
 }
 

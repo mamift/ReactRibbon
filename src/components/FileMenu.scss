@@ -7,6 +7,10 @@
   display: flex;
   align-items: flex-end;
 
+  a {
+    color: white !important;
+  }
+
   button.file-menu {
     width: 60px;
     height: 24px;
@@ -28,10 +32,6 @@
 
     &.focus {
       border-bottom-color: #fec02b;
-    }
-
-    a {
-      color: white;
     }
   }
 }

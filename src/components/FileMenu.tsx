@@ -42,7 +42,7 @@ export default class FileMenu extends React.Component<FileMenuProps, object> {
   render() {
     return (
       <div className="file-menu">
-        <Link to={this.state.isShowing ? "/backstage" : "/home"}>
+        <Link to={!this.state.isShowing ? "/backstage" : "/home"}>
           <button className={this.state.isShowing ? 'file-menu focus' : 'file-menu'} onClick={ (e?: any) => { this.clickHandler(e) }}>
             {this.props.text}
           </button>

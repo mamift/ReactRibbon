@@ -11,14 +11,14 @@ export interface WorkspaceProps {
 
 export default class Workspace extends React.Component<WorkspaceProps, object> {
   render() {
-    let showQl = this.props.showQuickLaunch
-    let rootClass = "workspace"
-    if (showQl) { rootClass = rootClass.appendWithDelimiter("workspaceWithQuickLaunch") }
+    let showQuickLaunch = this.props.showQuickLaunch
+    let rootClass = 'workspace'
+    if (showQuickLaunch) { rootClass = rootClass.appendWithDelimiter('workspaceWithQuickLaunch') }
 
     return (
       <div className={rootClass}>
-        {showQl ? <QuickLaunch /> : null}
-        <div className="workspace-content">
+        {showQuickLaunch ? <QuickLaunch /> : null}
+        <div className='workspace-content'>
           {this.props.children}
         </div>
       </div>
