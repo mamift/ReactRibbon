@@ -7097,6 +7097,13 @@ ts-loader@^2.3.7:
     loader-utils "^1.0.2"
     semver "^5.0.1"
 
+ts-nameof@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/ts-nameof/-/ts-nameof-3.2.0.tgz#87e3069492c99a12115ef0b4eb3157acb051a791"
+  integrity sha512-7PTQKWasVB9/OVFekz6v6KXOYr76NEbgwkoKuOlaAnvrUD5CzQCiy/b97YIs+/7YD5mrIM4CNmUMnRRLuD4nMw==
+  dependencies:
+    glob "^7.1.3"
+
 tsconfig-paths-webpack-plugin@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/tsconfig-paths-webpack-plugin/-/tsconfig-paths-webpack-plugin-2.0.0.tgz#7652dc684bb3206c8e7e446831ca01cbf4d11772"
