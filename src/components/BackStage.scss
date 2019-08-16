@@ -96,15 +96,17 @@ $backstageSidebarWidth: 135px;
     list-style-type: none;
 
     li {
-      color: lighten(gray, 30%);
+      // color: lighten(gray, 30%);
+      color: white;
       position: relative;
+      text-align: right;
       z-index: 5;
       border: 1px solid transparent;
       border-left: none;
       border-right: none;
       min-height: 25px;
-      padding: 9px 9px 9px 15px;
-      margin: 9px auto;
+      padding: 9px 15px 9px 9px;
+      margin: 5px auto;
 
       &:hover {
         @include bs-sidebar-li-bg-hover();

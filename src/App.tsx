@@ -69,7 +69,7 @@ export const AppLayout = () => (
       <Route path="/home" />
 
       <Workspace showQuickLaunch={true}>
-        <p>OI! some content goes here</p>
+        <p>Some content goes here</p>
       </Workspace>
 
     </div>

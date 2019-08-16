@@ -28,11 +28,11 @@ interface TrailState {
   // add some state props here
 }
 
-type WithRouterTrailProps = RouteComponentProps & TrailProps
+type TrailType = RouteComponentProps<{}> & TrailProps
 
-export class Trail extends React.Component<WithRouterTrailProps, TrailState> {
+export class Trail extends React.Component<TrailType, TrailState> {
 
-  constructor(props: WithRouterTrailProps) {
+  constructor(props: TrailType) {
     super(props)
   }
 
@@ -47,9 +47,9 @@ export class Trail extends React.Component<WithRouterTrailProps, TrailState> {
     let pathNameSplit = location.pathname.split('/')
     let locationComponents = pathNameSplit.filter((v, i, a) => !(v.isEmpty()));
 
-
     let trailTemplate = (text: string, linkPath: string) => (
-      <Link to={linkPath}><i className="fa fa-chevron-right">&nbsp;</i>
+      <Link to={linkPath}>
+        <i className="fa fa-chevron-right">&nbsp;</i>
         <h3 className="title">
           <span>{text}</span>
         </h3>
@@ -59,10 +59,10 @@ export class Trail extends React.Component<WithRouterTrailProps, TrailState> {
     return (
       <div className="trail">
         <div className="trail-breadcrumb">
-          <h3 className="title">            
+          <h3 className="title">
             <Link to="/home"><i className="fa fa-home" style={this.homeIcon}>&nbsp;</i>Home</Link>
           </h3>
-          {locationComponents.length > 1 ? 
+          {locationComponents.length > 1 ?
             (locationComponents.map((v, i, a) => (i == 0) ? (<div />) : trailTemplate('test', v))) :
             (<div />)}
         </div>

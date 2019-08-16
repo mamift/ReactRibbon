@@ -13,19 +13,23 @@ export interface QuickLaunchProps {
 
 export default class QuickLaunch extends React.Component<QuickLaunchProps, object> {
   render() {
-    let defaultLinkObject = new LinkObject('Administration', "/administration")
-    let testingChildren = [new LinkObject('test 1'), new LinkObject('test 2')]
+    let adminLink = new LinkObject('Administration', '/administration')
+    let dashboardLink = new LinkObject('Dashboard', '/dashboard')
+    
+    let adminChildren = [new LinkObject('test 1', '/test1'), new LinkObject('test 2', '/test2')]
+    let dashboardChildren = [new LinkObject('dashboard 1', '/dashboard1'), new LinkObject('dashboard 2', '/dashboard2')]
 
     return (
       <div className="quicklaunch">
         <ul className="navigation">
-          <QuickLaunchGroup headerLink={defaultLinkObject} childLinks={testingChildren} />
-          <li className="nav-group">
+          <QuickLaunchGroup headerLink={adminLink} childLinks={adminChildren} />
+          <QuickLaunchGroup headerLink={dashboardLink} childLinks={dashboardChildren} />
+          {/*<li className="nav-group">
             <div className="title"><a href="link">please do stuff</a></div>
             <ul>
               <li><a href="#">link to nothing</a></li>
             </ul>
-          </li>
+          </li>*/}
         </ul>
       </div>
     )

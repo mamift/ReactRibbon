@@ -1,6 +1,7 @@
 import * as React from 'react'
 
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Route, Link, RouteComponentProps } from 'react-router-dom'
+import { withRouter } from 'react-router'
 
 import LinkObject from '../classes/LinkObject'
 
@@ -9,9 +10,17 @@ export interface QuickLaunchGroupProps {
   childLinks?: LinkObject[]
 }
 
-export default class QuickLaunchGroup extends React.Component<QuickLaunchGroupProps, object> {
-  constructor(props: QuickLaunchGroupProps) {
+interface QuickLaunchState {
+  titleTextWidth: number,
+  linkTitleEl?: React.RefObject<HTMLDivElement>
+}
+
+type QuickLaunchType = RouteComponentProps<{}> & QuickLaunchGroupProps
+
+export class QuickLaunchGroup extends React.Component<QuickLaunchType, QuickLaunchState> {
+  constructor(props: QuickLaunchType) {
     super(props)
+    this.state = { titleTextWidth: 0, linkTitleEl: React.createRef() }
 
     if (props.childLinks == null) {
       props.childLinks = []
@@ -22,21 +31,34 @@ export default class QuickLaunchGroup extends React.Component<QuickLaunchGroupPr
     return this.props.childLinks == null
   }
 
-  get liClasses(): string {
-    return `nav-group ${this.noChildren ? 'no-children' : ''}`.trimRight()
+  get getLiClasses(): string {
+    return `nav-group ${this.noChildren ? 'no-children' : ''}`.trim()
+  }
+
+  get getTitleWidth(): object {
+    return {
+      width: this.state.titleTextWidth
+    }
+  }
+
+  componentDidMount() {
   }
 
   render() {
     let childrenLinks = this.props.childLinks!.map((link) => {
       return (
         <li key={link.name}>
-          <a href="#">{link.name}</a>
+          <Link to={link.path}>{link.name}</Link>
         </li>
       )
     })
+
     return (
-      <li className={this.liClasses}>
-        <div className="title"><a href="#">{this.props.headerLink.name}</a></div>
+      <li className={this.getLiClasses}>
+        <div className="title" ref={this.state.linkTitleEl}>
+          <span className="titleFlourish" style={this.getTitleWidth}>&nbsp;</span>
+          <Link to={this.props.headerLink.path}>{this.props.headerLink.name}</Link>
+        </div>
         <ul>
           {childrenLinks}
         </ul>
@@ -44,3 +66,7 @@ export default class QuickLaunchGroup extends React.Component<QuickLaunchGroupPr
     )
   }
 }
+
+let QuickLaunchGroupWithRouter = withRouter(QuickLaunchGroup)
+
+export default QuickLaunchGroupWithRouter

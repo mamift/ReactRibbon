@@ -10,12 +10,13 @@
   }
 
   .nav-group {
+    margin-left: 7px;
     li {
       a {
         border: 1px solid transparent;
         @extend %full_width_anchor;
         color: $quickLaunchLinkColor;
-        padding: 2px 2px 3px 9px;
+        padding: 2px 2px 3px 12px;
         margin: 2px 0 2px 0;
 
         &:hover {
@@ -32,6 +33,12 @@
 
     .title {
       padding-bottom: 5px;
+
+      & > span.titleFlourish {
+        float: right;
+        border-bottom: 1px solid darkgray;
+        margin-top: -7px;
+      }
 
       @include mobile { padding-bottom: 0; }
 
