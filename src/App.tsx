@@ -55,6 +55,9 @@ export const AppLayout = () => (
           <FileMenu text="File" />
           <RibbonBar>
             <RibbonTabButton name="summary" defaultActive={true}>Home</RibbonTabButton>
+            <RibbonTabGroup color="blue">
+              <RibbonTabButton name="dashboard" defaultActive={true}>Dashboard</RibbonTabButton>
+            </RibbonTabGroup>
             <RibbonTabGroup color="red">
               <RibbonTabButton name="log">Log</RibbonTabButton>
             </RibbonTabGroup>
@@ -68,6 +71,10 @@ export const AppLayout = () => (
               <RibbonTabButton name="overview">Overview</RibbonTabButton>
               <RibbonTabButton name="another">Another</RibbonTabButton>
             </RibbonTabGroup>
+            <RibbonTabGroup color="yellow" text="Contextual 2">
+              <RibbonTabButton name="overview2">Overview</RibbonTabButton>
+              <RibbonTabButton name="another2">Another</RibbonTabButton>
+            </RibbonTabGroup>
           </RibbonBar>
         </RibbonHeader>
 
@@ -76,6 +83,9 @@ export const AppLayout = () => (
         </RibbonToolbar>
         <RibbonToolbar name="summary">
           <Trail />
+        </RibbonToolbar>
+        <RibbonToolbar name="dashboard">
+          dashboard
         </RibbonToolbar>
         <RibbonToolbar name="log">
           log
@@ -90,6 +100,12 @@ export const AppLayout = () => (
           overview
         </RibbonToolbar>
         <RibbonToolbar name="another">
+          another
+        </RibbonToolbar>
+        <RibbonToolbar name="overview2">
+          overview
+        </RibbonToolbar>
+        <RibbonToolbar name="another2">
           another
         </RibbonToolbar>
       </Ribbon>
