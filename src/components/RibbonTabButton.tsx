@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { observe, IObjectDidChange } from 'mobx'
 
 // import { withRouter } from 'react-router'
 
@@ -6,9 +7,12 @@ import * as React from 'react'
 
 import './RibbonTabButton.scss'
 
+import { observer } from 'mobx-react'
+import ribbonState from '../classes/RibbonState'
+
 export interface RibbonTabButtonProps {
   name: string,
-  text: string,
+  text?: string,
   defaultActive?: boolean,
   color?: string,
   navigateToPathOnClick?: string
@@ -17,24 +21,30 @@ export interface RibbonTabButtonProps {
 /**
  * Represents a tab button for the ribbon tab row
  */
+@observer
 export default class RibbonTabButton extends React.Component<RibbonTabButtonProps, object> {
   private _isMounted: boolean  = false
   private _isCurrentlyActiveTabButton: boolean  = false
 
   constructor(props: RibbonTabButtonProps) {
     super(props)
+    ribbonState.registerRibbon(this.props.name)
+    this._isCurrentlyActiveTabButton = this.props.defaultActive || false
+    observe(ribbonState, (c) => {
+      // todo
+    })
   }
 
   componentDidMount() {
     this._isMounted = true
   }
 
-  get isCurrentlyActiveTabButton(): boolean {
-    return this._isCurrentlyActiveTabButton
-  }
-
   get isActive(): boolean {
-    return this._isMounted ? (this.props.defaultActive || false) : this._isCurrentlyActiveTabButton
+    const isSetActiveRibbon = ribbonState.activeRibbon == this.props.name;
+    if (this._isCurrentlyActiveTabButton)
+
+    if (isSetActiveRibbon) this._isCurrentlyActiveTabButton = false
+    return isSetActiveRibbon
   }
 
   get liClasses(): string {
@@ -44,8 +54,9 @@ export default class RibbonTabButton extends React.Component<RibbonTabButtonProp
     }
     return classes
   }
+
   public clickHandler(event: Event) {
-    console.log(`RibbonTabButton '${this.props.name}'`, event.target)
+    ribbonState.activeRibbon = this.props.name
   }
 
   /**

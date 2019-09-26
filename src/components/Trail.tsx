@@ -7,25 +7,9 @@ import { withRouter } from 'react-router'
 import './Trail.scss'
 
 interface TrailProps {
-  match: {
-    isExact: boolean,
-    params: {},
-    path: string,
-    url: string
-  },
-  location: {
-    hash: string,
-    key: string,
-    pathname: string,
-    search: string,
-    state: {} | undefined
-  },
-  history: History,
-  staticContext?: any
 }
 
 interface TrailState {
-  // add some state props here
 }
 
 type TrailType = RouteComponentProps<{}> & TrailProps

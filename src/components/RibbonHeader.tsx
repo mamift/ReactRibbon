@@ -1,4 +1,3 @@
-
 import * as React from 'react'
 
 export default class RibbonHeader extends React.Component {

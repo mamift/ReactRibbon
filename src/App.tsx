@@ -37,31 +37,60 @@ const RouteList = [
   }
 ]
 
-const backstage = () => (<BackStage />)
+const TestToolbar = () => {
+  return (
+    <RibbonToolbar name="test">
+      <p>this is some text</p>
+    </RibbonToolbar>
+  )
+}
+
+let TestToolbarInstance = (<TestToolbar />)
 
 export const AppLayout = () => (
   <BrowserRouter>
     <div id="app" className="container-fluid">
       <Ribbon>
         <RibbonHeader>
-          <FileMenu text="Home" />
+          <FileMenu text="File" />
           <RibbonBar>
-            <RibbonTabButton name="summary" text="Summary">
-              Summary
-            </RibbonTabButton>
-            <RibbonTabGroup defaultIsVisible={false} color="red">
-              <RibbonTabButton text="Log" name="logBtn">
-                Log
-              </RibbonTabButton>
+            <RibbonTabButton name="summary" defaultActive={true}>Home</RibbonTabButton>
+            <RibbonTabGroup color="red">
+              <RibbonTabButton name="log">Log</RibbonTabButton>
             </RibbonTabGroup>
-            <RibbonTabGroup defaultIsVisible={true} color="blue" text="group1">
-              <RibbonTabButton text="" name="btn1">Overview</RibbonTabButton>
-              <RibbonTabButton text="Butto2!" name="btn2" />
+            <RibbonTabGroup color="green">
+              <RibbonTabButton name="diagnostics">Diagnostics</RibbonTabButton>
+            </RibbonTabGroup>
+            <RibbonTabGroup color="orange">
+              <RibbonTabButton name="report">Report</RibbonTabButton>
+            </RibbonTabGroup>
+            <RibbonTabGroup color="blue" text="Contextual">
+              <RibbonTabButton name="overview">Overview</RibbonTabButton>
+              <RibbonTabButton name="another">Another</RibbonTabButton>
             </RibbonTabGroup>
           </RibbonBar>
         </RibbonHeader>
-        <RibbonToolbar name="TrailToolbar">
+
+        <RibbonToolbar name="firstup" firstVisible={true}>
+          Click a button
+        </RibbonToolbar>
+        <RibbonToolbar name="summary">
           <Trail />
+        </RibbonToolbar>
+        <RibbonToolbar name="log">
+          log
+        </RibbonToolbar>
+        <RibbonToolbar name="diagnostics">
+          diagnostics
+        </RibbonToolbar>
+        <RibbonToolbar name="report">
+          report
+        </RibbonToolbar>
+        <RibbonToolbar name="overview">
+          overview
+        </RibbonToolbar>
+        <RibbonToolbar name="another">
+          another
         </RibbonToolbar>
       </Ribbon>
 

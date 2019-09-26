@@ -17,8 +17,6 @@ export default class RibbonBar extends React.Component<RibbonBarProps, object> {
   }
 
   componentDidMount() {
-    console.log(this.props.children)
-
-    this.props.children
+    // console.log(this.props.children)
   }
 }
