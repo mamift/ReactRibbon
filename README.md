@@ -1,12 +1,14 @@
 # A re-creation of the Office 2010 ribbon in react
 
-After git-cloning, run `yarn start run` or `npm start run`.
+After git-cloning, and installing dependencies, run `yarn start run` or `npm start run`.
 
-Includes a functioning ribbon toolbar (with tabbed ribbon buttons and grouped contextual ribbons, also with 5 different colours)
+Includes a functioning ribbon toolbar (with tabbed ribbon buttons and grouped contextual ribbons, also with 5 different colours).
 
-## Screenshots:
+It was built with IE11 compatibility in mind, so should work with all other major browsers without issue.
 
-Very barebones:
+## Screenshot:
+
+[screenshot1]:(screenshot1.png) "A screenshot"
 
 # Misc
 
