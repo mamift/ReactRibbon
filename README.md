@@ -8,7 +8,7 @@ It was built with IE11 compatibility in mind, so should work with all other majo
 
 ## Screenshot:
 
-[screenshot1]:(screenshot1.png) "A screenshot"
+![screenshot1](screenshot1.png)
 
 # Misc
 
