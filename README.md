@@ -6,6 +6,10 @@ Includes a functioning ribbon toolbar (with tabbed ribbon buttons and grouped co
 
 It was built with IE11 compatibility in mind, so should work with all other major browsers without issue.
 
+## Things missing
+
+This implementation only includes tab and styling for tabs and tab groups; it doesn't yet include an implementation for buttons and button groups, but doing that should be easy enough.
+
 ## Screenshot:
 
 ![screenshot1](screenshot1.png)
