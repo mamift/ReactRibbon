@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "auth0-js": "^9.4.2",
-    "bootstrap-sass": "3.3.7",
+    "bootstrap-sass": "3.4.1",
     "mobx": "4.13.*",
     "mobx-react": "5.*",
     "object-assign": "4.1.1",
